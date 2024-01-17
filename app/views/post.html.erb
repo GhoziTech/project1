@@ -1,0 +1,19 @@
+<div class="main posts-index">
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Judul</th>
+            <th>Deskripsi</th>
+        </tr>
+        <% 
+        no=0
+        @data.each do |value| %>
+        <tr>
+            <td><% no= 
+            no+1 %></td>
+            <td><% value.title %></td>
+            <td><% value.content %></td>
+        </tr>
+        <% end %>
+    </table>    
+</div>
