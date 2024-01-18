@@ -1,6 +1,9 @@
-class PostController < ApplicationController
-    def index
-        @data = Post.all
-    end
+# class PostController < ApplicationController
+#     def index
+#         @data = Post.all
+#     end
 
-end
+#     def detail
+#         @data = Post.find_by(id: params[:id])
+#     end
+# end

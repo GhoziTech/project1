@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   get "/artikel" => "home#artikel"
   get "/about" => "home#about"
   get "/contact" => "home#contact"
+  get "/post/detail/:id" => "postingan#detail"
+  get "/postingan/input" => "postingan#input"
+  post "/postingan/create" => "postingan#create"
+  get "/post/edit/:id" => "postingan#edit"
+  post "/postingan/update/:id" => "postingan#update"
+  get "/post/delete/:id" => "postingan#delete"
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
